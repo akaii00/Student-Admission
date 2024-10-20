@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Admission</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .inline-radio {
+            display: inline-block;
+            margin-right: 20px;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    
+    <h2>STUDENT DATA PROFILE</h2>
+    
+    <h3>Data Privacy Notice:</h3>
+    <p>The "School" Ramon Magsaysay Memorial Colleges is committed to respecting each student's personal privacy in compliance with the Data Privacy Act of 2012, while ensuring its ability to fully carry out its responsibilities. It is understood that you agree to share your personal information by continuing to fill up this form.</p>
+    
+    <form action="#" method="post">
+        <h3>Selected Course:</h3>
+        <ul>
+            <li>College <input type="radio" name="course" value="college"></li>
+            <li>Masteral <input type="radio" name="course" value="masteral"></li>
+            <li>Senior High <input type="radio" name="course" value="Senior High"></li>
+        </ul>
+                
+        <div id="senior_high_section" class="hidden">
+            <label>Senior High:</label>
+            <select name="senior_high_courses">
+                <option value="- Select -">- Select -</option>
+                <option value="HUMSS">HUMSS</option>
+                <option value="STEM">STEM</option>
+                <option value="ABM">ABM</option>
+            </select>
+        </div>
+        <div id="college_section" class="hidden">
+            <h3>College Courses:</h3>
+            <select name="college_courses">
+                <option value="- Select -">- Select -</option>
+                <option value="BSCS">Bachelor of Science in Computer Science</option>
+                <option value="BSIT">Bachelor in Information Technology</option>
+                <option value="ACT">Associate in Computer Technology</option>
+                <option value="BLIS">Bachelor of Library and Information Science</option>
+                <option value="BAELS">BA in English Language Studies</option>
+                <option value="BAPsy">BA in Psychology</option>
+                <option value="BACA">BA in Communication Arts</option>
+                <option value="BSES">BS in Environmental Science</option>
+                <option value="BSMath">BS in Mathematics</option>
+                <option value="BSSW">BS in Social Work</option>
+                <option value="BPA">Bachelor of Public Administration</option>
+                <option value="BSBio">BS in Biology</option>
+                <option value="BPA-Dance">Bachelor of Performing Arts Major in Dance</option>
+                <option value="BSESS">BS in Exercise and Sports Science Major in Fitness and Sports Management</option>
+                <option value="BCE">Bachelor in Civil Engineering</option>
+                <option value="BSA">Bachelor of Science in Accountancy</option>
+                <option value="BEEd">Bachelor of Elementary Education</option>
+                <option value="BSEd">Bachelor of Secondary Education</option>
+                <option value="BECEd">Bachelor of Early Childhood Education</option>
+                <option value="BCAEd">Bachelor of Culture and Arts Education</option>
+                <option value="BSA">Bachelor of Science in Accountancy</option>
+                <option value="BSIA">BS in Internal Auditing</option>
+                <option value="BSMA">BS in Management Accounting</option>
+                <option value="BSOA">BS in Office Administration</option>
+                <option value="BSCA">BS in Customs Administration</option>
+                <option value="BSREM">BS in Real Estate Management</option>
+                <option value="BSTM">BS in Tourism Management</option>
+                <option value="BSHM">BS in Hospitality Management</option>
+                <option value="BSBA">BS in Business Administration</option>
+                <option value="BSCrim">Bachelor of Science in Criminology</option>
+                <option value="BSPh">Bachelor of Science in Pharmacy</option>
+                <option value="BSN">Bachelor of Science in Nursing</option>
+            </select>
+        </div>
+                Semester: 
+                <select name="semester">
+                    <option value="- Select -">- Select -</option>
+                    <option value="1st semester">1st semester</option>
+                    <option value="2nd semester">2nd semester</option>
+                </select> 
+                School Year: 
+                <select name="school_year">
+                    <option value="- Select -">- Select -</option>
+                    <option value="2023-2024">2023-2024</option>
+                    <option value="2024-2025">2024-2025</option>
+                    <option value="2025-2026">2025-2026</option>
+                </select>
+            </li>
+            <li>TVET <input type="radio" name="course" value="tvet"></li>
+        </ul>
+
+        <table>
+            <tr>
+                <td>Surname:</td>
+                <td><input type="text" name="surname" placeholder="Lastname"></td>
+                <td>Citizenship:</td>
+                <td><input type="text" name="citizenship" placeholder="FILIPINO"></td>
+            </tr>
+            <tr>
+                <td>Given Name:</td>
+                <td><input type="text" name="given_name" placeholder="Firstname"></td>
+                <td>Gender:</td>
+                <td>
+                    <input type="radio" name="gender" value="Male"> Male
+                    <input type="radio" name="gender" value="Female"> Female
+                </td>
+            </tr>
+            <tr>
+                <td>Middle Name:</td>
+                <td><input type="text" name="middle_name" placeholder="Middle initial"></td>
+                <td>Indigenous?</td>
+                <td>
+                    <input type="radio" name="indigenous" value="Yes"> Yes
+                    <input type="radio" name="indigenous" value="No"> No
+                </td>
+            </tr>
+            <tr>
+                <td>Ethnicity:</td>
+                <td>
+                    <select name="ethnicity">
+                        <option value="- Select -">- Select -</option>
+                        <option value="Tagalog">Tagalog</option>
+                        <option value="Cebuano">Cebuano</option>
+                        <option value="Ilocano">Ilocano</option>
+                        <option value="Visayan">Visayan</option>
+                        <option value="Kapampangan">Kapampangan</option>
+                        <option value="Bicolano">Bicolano</option>
+                        <option value="Hiligaynon">Hiligaynon</option>
+                        <option value="Waray">Waray</option>
+                        <option value="Tausug">Tausug</option>
+                        <option value="Maranao">Maranao</option>
+                        <option value="Maguindanao">Maguindanao</option>
+                        <option value="Ifugao">Ifugao</option>
+                        <option value="Ibanag">Ibanag</option>
+                        <option value="Kalinga">Kalinga</option>
+                        <option value="Subanen">Subanen</option>
+                        <option value="Lumad">Lumad</option>
+                        <option value="Sama">Sama</option>
+                        <option value="Aeta">Aeta</option>
+                    </select>
+                </td>
+                <td>Dialect:</td>
+                <td>
+                    <select name="dialect">
+                        <option value="- Select -">- Select -</option>
+                        <option value="">Tagalog</option>
+                        <option value="">Cebuano</option>
+                        <option value="">Ilonggo</option>
+                        <option value="">Ilocano</option>
+                        <option value="">English</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Religion:</td>
+                <td>
+                    <select name="religion">
+                        <option value="- Select -">- Select -</option>
+                        <option value="">Roman Catholic</option>
+                        <option value="">Islam</option>
+                        <option value="">Iglesia ni Cristo (INC)</option>
+                        <option value="">Seventh-day Adventist</option>
+                        <option value="">Born Again</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+
+        <h3>Birth Information:</h3>
+        <table>
+            <tr>
+                <td>Birth Date:</td>
+                <td>
+                    <select name="birth_year">
+                        <option value="year">Year</option>
+                    </select>
+                    <select name="birth_month">
+                        <option value="month">Month</option>
+                        <option value="01">January</option>
+                        <option value="02">February</option>
+                        <option value="02">March</option>
+                        <option value="02">April</option>
+                        <option value="02">May</option>
+                        <option value="02">June</option>
+                        <option value="02">July</option>
+                        <option value="02">August</option>
+                        <option value="02">September</option>
+                        <option value="02">October</option>
+                        <option value="02">November</option>
+                        <option value="02">December</option>
+                    </select>
+                    <select name="birth_day">
+                        <option value="day">Day</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                        <option value="">6</option>
+                        <option value="">7</option>
+                        <option value="">8</option>
+                        <option value="">9</option>
+                        <option value="">10</option>
+                        <option value="">11</option>
+                        <option value="">12</option>
+                        <option value="">13</option>
+                        <option value="">14</option>
+                        <option value="">15</option>
+                        <option value="">16</option>
+                        <option value="">17</option>
+                        <option value="">18</option>
+                        <option value="">19</option>
+                        <option value="">20</option>
+                        <option value="">21</option>
+                        <option value="">22</option>
+                        <option value="">23</option>
+                        <option value="">24</option>
+                        <option value="">25</option>
+                        <option value="">26</option>
+                        <option value="">27</option>
+                        <option value="">28</option>
+                        <option value="">29</option>
+                        <option value="">30</option>
+                        <option value="">31</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Birth Place:</td>
+                <td><input type="text" name="birth_place" placeholder="lugar saan ipinanganak"></td>
+            </tr>
+            <tr>
+                <td>Contact no:</td>
+                <td><input type="text" name="contact_no" placeholder="+639123456789"></td>
+            </tr>
+        </table>
+
+        <h3>Civil Status:</h3>
+        <p>
+            <input type="radio" name="civil_status" value="single"> Single
+            <input type="radio" name="civil_status" value="married"> Married
+            <input type="radio" name="civil_status" value="widowed"> Widowed
+        </p>
+
+        <h3>Home Address:</h3>
+            <td><input type="text" name="home_adrress" placeholder="Home Address"></td>
+        </select>
+        <input type="text" name="home_address_details" placeholder="barangay, street, blk, house#">
+        
+        <h3>Email Address:</h3>
+        <input type="text" name="email_address" placeholder="your email@url.host">
+        
+        <h3>Entry Type:</h3>
+        <p>
+            <input type="radio" name="entry_type" value="New"> New
+            <input type="radio" name="entry_type" value="Transferee"> Transferee
+            <input type="radio" name="entry_type" value="Returnee"> Returnee
+        </p>
+
+        <h3>Documents:</h3>
+        <input type="checkbox" name="documents" value="F137"> F137
+        <input type="checkbox" name="documents" value="BC"> BC
+        <input type="checkbox" name="documents" value="GMC"> GMC
+        <input type="checkbox" name="docoments" value="M-contract"> M-contract
+        <input type="checkbox" name="docoments" value="OTR"> OTR
+        <input type="checkbox" name="docoments" value="F138/card"> F138/card
+        <input type="checkbox" name="docoments" value="HD"> HD
+
+    </div>
+    <div class="Exam">
+        <label for="result">Exam Result</label>
+        <input type="number" id="result" placeholder="-0-" required>
+    </div>
+    </div>
+
+        <h2>PREVIOUS SCHOLASTIC DATA</h2>
+        <h3>Elementary (1-6)</h3>
+        <label for="elementary-school">School:</label>
+        <input type="text" id="elementary-school" name="elementary-school" placeholder="saan nagtapos ng elementarya"><br><br>
+
+        <label for="elementary-address">School Address:</label>
+        <input type="text" id="elementary-address" name="elementary-address" placeholder="Region, Province, City/Municipality, Barangay, Street"><br><br>
+
+        <label for="elementary-year">School Year:</label>
+        <select id="elementary-year" name="elementary-year">
+            <option value="">-- Select Year --</option>
+        </select><br><br>
+
+        <h3>Junior High School (7-10)</h3>
+        <label for="junior-high-school">School:</label>
+        <input type="text" id="junior-high-school" name="junior-high-school" placeholder="saan nagtapos ng secondarya"><br><br>
+
+        <label for="junior-high-address">School Address:</label>
+        <input type="text" id="junior-high-barangay" name="junior-high-barangay" placeholder="Barangay">
+        <input type="text" id="junior-high-street" name="junior-high-street" placeholder="Street"><br><br>
+
+        <label for="junior-high-year">School Year:</label>
+        <select id="junior-high-year" name="junior-high-year">
+            <option value="">-- Select Year --</option>
+        </select><br><br>
+
+        <h3>Senior High School (11-12)</h3>
+        <label for="senior-high-school">School:</label>
+        <input type="text" id="senior-high-school" name="senior-high-school" placeholder="saan nagtapos ng secondarya-antas"><br><br>
+
+        <label for="senior-high-address">School Address:</label>
+        <input type="text" id="senior-high-barangay" name="senior-high-barangay" placeholder="Barangay">
+        <input type="text" id="senior-high-street" name="senior-high-street" placeholder="Street"><br><br>
+
+        <label for="senior-high-year">School Year:</label>
+        <select id="senior-high-year" name="senior-high-year">
+            <option value="">-- Select Year --</option>
+        </select><br><br>
+        <div class="form-section">
+            <h3>PARENT and/or GUARDIAN DATA</h3>
+    
+            <div class="form-row">
+                <label for="parent-name">Full Name (Parent):</label>
+                <input type="text" id="parent-name" placeholder="Pangalan ng Ina [Apelyido, Pangalang]" required>
+                <label for="parent-contact">Contact No.:</label>
+                <input type="text" id="parent-contact" placeholder="Numerong Tawagan" required>
+            </div>
+    
+            <div class="form-row">
+                <label for="parent-address">Address:</label>
+                <input type="text" id="parent-address" placeholder="Tirahan - City, Barangay, Street, Blk, House#" required>
+                <label for="relationship">Relationship:</label>
+                <input type="text" id="relationship" placeholder="Relasyon" required>
+            </div>
+    
+            <div class="form-row">
+                <label>House:</label>
+                <input type="radio" name="house-status" value="own"> Own
+                <input type="radio" name="house-status" value="rented"> Rented
+            </div>
+    
+            <div class="form-row">
+                <input type="checkbox" id="parent-as-guardian">
+                <label for="parent-as-guardian">Parent as Guardian</label>
+            </div>
+    
+            <div class="form-row">
+                <label for="guardian-name">Full Name (Guardian):</label>
+                <input type="text" id="guardian-name" placeholder="Pangalan ng Tagapag-alaga [Apelyido, Pangalang]">
+                <label for="guardian-contact">Contact No.:</label>
+                <input type="text" id="guardian-contact" placeholder="Numerong Tawagan">
+            </div>
+    
+            <div class="form-row">
+                <label for="guardian-address">Address:</label>
+                <input type="text" id="guardian-address" placeholder="Tirahan - City, Barangay, Street, Blk, House#">
+            </div>
+        </div>
+    
+        <div class="form-section">
+            <h3>STUDENT CLINICAL-BASAL DATA</h3>
+    
+            <div class="form-row">
+                <label for="student-age">Age:</label>
+                <input type="number" id="student-age" placeholder="Edad">
+                <label for="student-height">Height [cm]:</label>
+                <input type="number" id="student-height" placeholder="Tangkad [cm]">
+                <label for="student-weight">Weight [kg]:</label>
+                <input type="number" id="student-weight" placeholder="Timbang [kg]">
+                <label for="student-blood">Blood Type:</label>
+                <select id="student-blood">
+                    <option value="">-- Select --</option>
+                    <option value="O+">O+</option>
+                    <option value="A+">A+</option>
+                    <option value="B+">B+</option>
+                    <option value="AB+">AB+</option>
+                    <option value="O-">O-</option>
+                    <option value="A-">A-</option>
+                    <option value="B-">B-</option>
+                    <option value="AB-">AB-</option>
+                </select>
+            </div>
+    
+            <div class="form-row">
+                <label for="congenital">Congenital (Inborn) Diseases/Disabilities:</label>
+                <input type="text" id="congenital" placeholder="Mga Walang Kakayahan o May Kapansanan">
+                <label for="date-diagnosed">Date Diagnosed:</label>
+                <input type="date" id="date-diagnosed">
+            </div>
+    
+            <div class="form-row">
+                <label for="hospitalization-1">Previous Hospitalization (1):</label>
+                <input type="text" id="hospitalization-1" placeholder="Saan?">
+                <label for="hospitalization-date-1">Date:</label>
+                <input type="date" id="hospitalization-date-1">
+            </div>
+            <div class="form-row">
+                <label for="hospitalization-2">Previous Hospitalization (2):</label>
+                <input type="text" id="hospitalization-2" placeholder="Saan?">
+                <label for="hospitalization-date-2">Date:</label>
+                <input type="date" id="hospitalization-date-2">
+            </div>
+     
+            <div class="form-row">
+                <label for="allergies">Allergies (if any):</label>
+                <input type="text" id="allergies" placeholder="Allergies">
+                <label for="medicine">Medicine:</label>
+                <input type="text" id="medicine" placeholder="Medicine">
+            </div>
+            <div class="form-row">
+                <label for="food-allergy">Food:</label>
+                <input type="text" id="food-allergy" placeholder="Food Allergies">
+                <label for="other-allergy">Others:</label>
+                <input type="text" id="other-allergy" placeholder="Other Allergies">
+            </div>
+    
+            <div class="form-row">
+                <label for="medication">Medication (Emergency/Maintenance):</label>
+                <input type="text" id="medication" placeholder="Indication(s) & Dosage">
+            </div>
+        </div>
+        <h2>Data Privacy Agreement</h2>
+        <p>I hereby allow the school "Ramon Magsaysay Memorial Colleges Inc." to collect, use, and process my personal data for legitimate educational or institutional interest as determined and enumerated in the Privacy Statement and other like circumstances, and allow its authorized personnel to process the information.</p>
+        <p>I am confirming that the data entered in this admission form is true and correct. I understand that Ramon Magsaysay Memorial Colleges reserves the right to revise any decision made based on the information provided if found to be untrue or incorrect.</p>
+        <input type="checkbox" name="data_privacy_agreement" required> I agree to the Data Privacy Notice.
+    </p>
+        <button type="submit" id="submitButton" class="disabled" disabled>Submit</button>
+    </form>
+    <script>
+        const birthYearSelect = document.querySelector('[name="birth_year"]');
+        const elementaryYearSelect = document.querySelector('#elementary-year');
+        const juniorHighYearSelect = document.querySelector('#junior-high-year');
+        const seniorHighYearSelect = document.querySelector('#senior-high-year');
+
+        const currentYear = new Date().getFullYear();
+        for (let year = currentYear; year >= 1900; year--) {
+            const option = document.createElement('option');
+            option.value = year;
+            option.textContent = year;
+            birthYearSelect.appendChild(option);
+
+            const schoolYearOption = document.createElement('option');
+            schoolYearOption.value = `${year - 1}-${year}`;
+            schoolYearOption.textContent = `${year - 1}-${year}`;
+            elementaryYearSelect.appendChild(schoolYearOption.cloneNode(true));
+            juniorHighYearSelect.appendChild(schoolYearOption.cloneNode(true));
+            seniorHighYearSelect.appendChild(schoolYearOption.cloneNode(true));
+        }
+        const courseRadios = document.querySelectorAll('input[name="course"]');
+        const seniorHighSection = document.getElementById('senior_high_section');
+        const collegeSection = document.getElementById('college_section');
+
+        courseRadios.forEach(radio => {
+            radio.addEventListener('change', () => {
+                const selectedCourse = radio.value;
+                seniorHighSection.classList.add('hidden');
+                collegeSection.classList.add('hidden');
+
+                if (selectedCourse === 'Senior High') {
+                    seniorHighSection.classList.remove('hidden');
+                } else if (selectedCourse === 'college') {
+                    collegeSection.classList.remove('hidden');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
